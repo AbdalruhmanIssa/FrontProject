@@ -25,8 +25,8 @@
             letter-spacing: 2px;
 }
 .carousel-control-next,.carousel-control-prev{
-height: 70px;
-width: 70px;
+height: 50px;
+width: 50px;
 top:50%;
 background-color: gold;
 border-radius: 50%;
@@ -92,6 +92,19 @@ transition: .6s;
     color: white;
 
 }
-.y{
+.y,.navbar-toggler-icon{
     color: gold;
 }
+.xx{
+height: 30px;
+border: 0;
+}
+@media (max-width: 470px) {
+    .navbar-brand{
+        font-size:40px ;
+        color: white;
+    }
+    .carousel-control-next,.carousel-control-prev{
+       display: none;
+        }
+  }
