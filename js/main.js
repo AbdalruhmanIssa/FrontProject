@@ -28,4 +28,15 @@ window.onscroll= function(){
         five.classList.remove('text-dark'); 
         logo.classList.remove('b');
     }
-};
+}
+function addClassOnWidth() {
+    if (window.innerWidth <= 450) { // Change 768 to your desired width
+      document.querySelector('.xyz').classList.add('flex-column');
+      document.querySelector('.xyz').classList.add('text-center');
+    }
+    else{ document.querySelector('.xyz').classList.remove('flex-column');
+    } 
+  }
+  
+  // Run on initial load
+  addClassOnWidth();
