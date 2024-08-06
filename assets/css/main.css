@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --mainfont: "Bebas Neue";
@@ -14,13 +15,13 @@
   font-size: 64px;
   letter-spacing: 2px;
 }
-.carousel-box p {
-  font-family: "Bebas Neue", sans-serif;
+header .carousel-box p {
+  font-family: var(--mainfont), sans-serif;
   letter-spacing: 2px;
   opacity: 0.5;
 }
 .carousel-box button {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: var(--mainfont), sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
 }
@@ -145,43 +146,80 @@
   }
 }
 @keyframes moveUpDown {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(20px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  @media (max-width: 1000px) {
-    .welcoming .address {
-      font-size: 50px;
-      width: 70%;
-    }
-    .welcoming p {
-      width: 70%;
-  
-      font-size: large;
-    }
+  50% {
+    transform: translateY(20px);
   }
-  @media (max-width: 800px) {
-    .welcoming .address {
-      font-size: 30px;
-    }
-    .welcoming p {
-      font-size: normal;
-    }
+}
+@media (max-width: 1000px) {
+  .welcoming .address {
+    font-size: 50px;
+    width: 70%;
   }
-  @media (max-width: 451px) {
-    .welcoming .address {
-      width: 100%;
-    }
-    .welcoming p {
-      width: 100%;
-    }
+  .welcoming p {
+    width: 70%;
+
+    font-size: large;
   }
-  @media (max-width: 451px) {
-    .zyx{
-        flex-direction: column-reverse;
-       }
+}
+@media (max-width: 800px) {
+  .welcoming .address {
+    font-size: 30px;
   }
+  .welcoming p {
+    font-size: normal;
+  }
+}
+@media (max-width: 451px) {
+  .welcoming .address {
+    width: 100%;
+  }
+  .welcoming p {
+    width: 100%;
+  }
+}
+@media (max-width: 451px) {
+  .zyx {
+    flex-direction: column-reverse;
+  }
+  .xyz {
+    flex-direction: column;
+  }
+}
+/*end of about us sections*/
+/*start of testomonial*/
+.testimonial {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 20px;
+}
+.carousel-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  margin-bottom: 20px;
+}
+.testimonial .carousel-box {
+  opacity: 1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  border: 0;
+  background: none;
+}
+.testimonial .carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: yellow;
+  border: 1px solid transparent;
+  margin: 0 3px;
+}
+@media (max-width: 380px) {
+  .testimonial .carousel-box {
+    font-size: 15px;
+  }
+}

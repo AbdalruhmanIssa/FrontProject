@@ -1,13 +1,11 @@
 window.onscroll = function () {
   const nav = document.querySelector("nav");
-  const abt = document.querySelector(".carousel-box");
   const one = document.querySelector(".one");
   const two = document.querySelector(".tow");
   const three = document.querySelector(".three");
   const four = document.querySelector(".for");
   const five = document.querySelector(".five");
   const logo = document.querySelector(".navbar-brand");
-  console.log(abt.offsetTop);
   if (window.scrollY > 24) {
     nav.classList.add("bg-light");
     nav.classList.add("shadow-sm");
@@ -29,11 +27,5 @@ window.onscroll = function () {
   }
 };
 
-function addClassOnWidth() {
-  if (window.innerWidth <= 450) {
-    document.querySelector(".xyz").classList.add("flex-column");
-  } else {
-    document.querySelector(".xyz").classList.remove("flex-column");
-  }
-}
-addClassOnWidth();
+
+
