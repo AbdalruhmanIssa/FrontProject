@@ -1,0 +1,30 @@
+@import url("./base.css");
+.reservation form{
+    font-family:"Roboto";
+    font-size: large;
+    text-transform: capitalize
+}
+.reservation h1 {
+    font-family:var(--mainfont);
+   
+}
+.bullcrab h2{
+    font-family: var(--mainfont);
+    font-size: 50px;
+ 
+    border-bottom: 5px yellow solid;
+}
+.icon-p svg{
+height: 21px;
+}
+.icon-p p{
+    height: 35px;
+    }
+h5{
+    font-family: var(--mainfont);
+    font-size: 30px;
+  
+}
+.contact-info svg{
+    height: 60px;
+}

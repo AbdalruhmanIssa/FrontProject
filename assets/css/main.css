@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
-  --mainfont: "Bebas Neue";
-}
+@import url("./base.css");
 /*start of header*/
 .carousel-box {
   background-color: rgba(0, 0, 0, 0.5);
@@ -53,59 +48,7 @@ header .carousel-box p {
   border-bottom: 20px solid yellow;
 }
 /*end of carousal*/
-/*start of nav*/
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-  border-bottom-color: yellow;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-}
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-  border-bottom-color: yellow;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  color: yellow;
-  
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
-}
-.b {
-  color: black !important;
-}
-.navbar {
-  font-family: var(--mainfont), sans-serif;
-}
-.zeze {
-  height: 50px;
-}
-.navbar-brand {
-  font-size: 50px;
-  color: white;
-}
-.navbar-brand:hover {
-  font-size: 50px;
-  color: white;
-}
-.span,
-.navbar-toggler-icon {
-  color: gold;
-}
-.xx {
-  height: 30px;
-  border: 0;
-}
-@media (max-width: 470px) {
-  .navbar-brand {
-    font-size: 40px;
-    color: white;
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-    display: none;
-  }
-}
-/*enf of nav*/
+
 /*start of about-us*/
 .about-us {
   margin-top: 100px;
@@ -225,81 +168,3 @@ header .carousel-box p {
   }
 }
 /*end of testomonial*/
-/*begining of footer*/
-footer{
-  color: black;
-display: flex;
-align-items: center;
-  height: 100vh;
-}
-.logo h1{
-  font-family: var(--mainfont), sans-serif;
-  font-size: 60px;
-  letter-spacing: 2px;
-}
-.logo span{
-  color:gold;
-}
-ul{
-  list-style: none; 
-
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  font-family: "Inter";
-  font-size: 16px ;
-  font-weight: bold;
-}
-footer h3{
-  font-family: var(--mainfont);
-}
-footer  .icons svg {
-  border: 1px solid white;
-  width: 15px;
-  height: 15px;
-  padding: 10px;
-  box-sizing: content-box;
-}
-footer .icons {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.face {
-  border: 1px solid white;
-  width: 15px;
-  height: 15px;
-  padding: 10px;
-  box-sizing: content-box;
-}
-
-.logo,.contact-info,.cheack-on,.final-one{
-  padding-bottom: 50px;
-}
-.one a:hover{
-  color: gold;
-  transition-duration: .3s ;
-
-}
-.one a{
-  transition-duration: .3s ;
-}
-.final-one svg:hover{
-  background-color: yellow;
-  transition-duration: .5s ;
-
-}
-.final-one svg{
-  transition-duration: .5s ;
-
-}
-.footer-content {
-  
-  border-top: 1px solid #ffffff47; 
-}
-@media (max-width:768px) {
-  .one{
-  margin-top: 300px;
-  } 
-}
