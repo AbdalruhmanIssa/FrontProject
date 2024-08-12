@@ -15,6 +15,7 @@ window.onscroll = function () {
     four.classList.add("text-dark");
     five.classList.add("text-dark");
     logo.classList.add("b");
+    
   } else {
     nav.classList.remove("bg-light");
     nav.classList.remove("shadow-sm");

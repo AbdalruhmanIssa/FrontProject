@@ -1,0 +1,40 @@
+@import url("./base.css");
+.contactUS form {
+  font-family: "Roboto";
+  font-size: large;
+  text-transform: capitalize;
+}
+.contactUS h1 {
+  font-family: var(--mainfont);
+}
+.bullcrab h2 {
+  font-family: var(--mainfont);
+  font-size: 50px;
+}
+.icon-p svg {
+  height: 21px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-family: var(--mainfont);
+  font-size: 30px;
+}
+.contact-info svg {
+  height: 60px;
+}
+.address p {
+  opacity: 0.7;
+}
+.address h1 {
+  font-size: 70px;
+  letter-spacing: 2px;
+}
+.urdeatilas {
+  margin-bottom: -25px;
+}
+@media (max-width: 770px) {
+  .urdeatilas {
+    margin-bottom: auto;
+  }
+}

@@ -2,7 +2,7 @@
 .reservation form{
     font-family:"Roboto";
     font-size: large;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 .reservation h1 {
     font-family:var(--mainfont);
@@ -16,10 +16,9 @@
 }
 .icon-p svg{
 height: 21px;
+margin-bottom: 10px;
 }
-.icon-p p{
-    height: 35px;
-    }
+
 h5{
     font-family: var(--mainfont);
     font-size: 30px;
@@ -27,4 +26,33 @@ h5{
 }
 .contact-info svg{
     height: 60px;
+}
+.address p{
+opacity: .7;
+}
+.address h1{
+    font-size: 70px;
+    letter-spacing: 2px;
+   
+
+}
+@media (max-width:400px) {
+    .contact-info svg{
+        
+        display: none;
+    }  
+}
+@media (max-width:767px) {
+    .both-are-here{
+        flex-direction: column-reverse ;
+    } 
+    .contact-info svg{
+        height: 60px !important;
+    }   
+   
+}
+@media (max-width:991px )  {
+    .contact-info svg{
+        height: 0;
+    }   
 }
