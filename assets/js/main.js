@@ -6,7 +6,7 @@ window.onscroll = function () {
   const four = document.querySelector(".for");
   const five = document.querySelector(".five");
   const logo = document.querySelector(".navbar-brand");
-  if (window.scrollY > 24) {
+  if (window.scrollY > 24 ) {
     nav.classList.add("bg-light");
     nav.classList.add("shadow-sm");
     one.classList.add("text-dark");
@@ -15,8 +15,8 @@ window.onscroll = function () {
     four.classList.add("text-dark");
     five.classList.add("text-dark");
     logo.classList.add("b");
-    
-  } else {
+  }
+   else {
     nav.classList.remove("bg-light");
     nav.classList.remove("shadow-sm");
     one.classList.remove("text-dark");
@@ -25,9 +25,7 @@ window.onscroll = function () {
     four.classList.remove("text-dark");
     five.classList.remove("text-dark");
     logo.classList.remove("b");
-  }
-};
-
+  }};
 (() => {
   'use strict'
 
@@ -46,5 +44,15 @@ window.onscroll = function () {
     }, false)
   })
 })()
+// script.js
+const toggleButton = document.getElementById('theme-toggle-btn');
+const htmlElement = document.documentElement;
+toggleButton.addEventListener('click', () => {
+  
+    const currentTheme = htmlElement.getAttribute('data-bs-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    htmlElement.setAttribute('data-bs-theme', newTheme);
 
+
+});
 

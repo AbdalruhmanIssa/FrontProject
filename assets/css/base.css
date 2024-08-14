@@ -26,8 +26,9 @@
   transition: 0.2s;
 }
 .b {
-  color: black !important;
+  color: black !important ;
 }
+
 .navbar {
   font-family: var(--mainfont), sans-serif;
 }
@@ -60,6 +61,9 @@
     display: none;
   }
 }
+.modes{
+  height: 40px;
+}
 /*enf of nav*/
 
 /*begining of footer*/
@@ -91,7 +95,7 @@ footer h3 {
   font-family: var(--mainfont);
 }
 .icons svg {
-  border: 1px solid white;
+  border: 1px solid transparent;
   width: 15px;
   height: 15px;
   padding: 10px;
