@@ -68,7 +68,7 @@
 
 /*begining of footer*/
 footer {
-  color: black;
+ 
   display: flex;
   align-items: center;
   height: 100vh;
@@ -94,19 +94,15 @@ footer a {
 footer h3 {
   font-family: var(--mainfont);
 }
+.dark{
+  color: white !important;
+}
 .icons svg {
   border: 1px solid transparent;
-  width: 15px;
-  height: 15px;
-  padding: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
 
-  box-sizing: content-box;
-}
-.face {
-  border: 1px solid white;
-  width: 15px;
-  height: 15px;
-  padding: 10px;
   box-sizing: content-box;
 }
 
@@ -117,8 +113,8 @@ footer h3 {
   padding-bottom: 50px;
 }
 .one a:hover {
-  color: gold;
-  transition-duration: 0.3s;
+  color: gold !important;
+  transition-duration: 0.3s !important;
 }
 .icons {
   display: flex;
@@ -126,11 +122,10 @@ footer h3 {
   flex-wrap: wrap;
 }
 .one a {
-  transition-duration: 0.3s;
+  transition-duration: 0.3s !important;
 }
 .icons svg:hover {
-  background-color: yellow;
-  transition-duration: 0.5s;
+  transform: scale(1.3);
 }
 .icons svg {
   transition-duration: 0.5s;

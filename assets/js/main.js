@@ -44,15 +44,45 @@ window.onscroll = function () {
     }, false)
   })
 })()
-// script.js
+// dark/light mode data-bs-theme
 const toggleButton = document.getElementById('theme-toggle-btn');
 const htmlElement = document.documentElement;
+const one= document.querySelector(".one-");
+const two= document.querySelector(".two-");
+const three= document.querySelector(".three-");
+const four= document.querySelector(".four-");
+const five= document.querySelector(".five-");
+const six= document.querySelector(".six-");
+const seven= document.querySelector(".seven-");
+const ate= document.querySelector(".ate-");
 toggleButton.addEventListener('click', () => {
-  
+
     const currentTheme = htmlElement.getAttribute('data-bs-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     htmlElement.setAttribute('data-bs-theme', newTheme);
-
+    if(one.classList.contains('aa')){
+      one.classList.remove('aa');
+      one.classList.add('text-light');
+      two.classList.add('text-light');
+      three.classList.add('text-light');
+      four.classList.add('text-light');
+      five.classList.add('text-light');
+      six.classList.add('text-light');
+      seven.classList.add('text-light');
+      ate.classList.add('text-light');
+    }
+    else{
+      one.classList.remove('text-light');
+      one.classList.add('aa');
+      two.classList.remove('text-light');
+      three.classList.remove('text-light');
+      four.classList.remove('text-light');
+      five.classList.remove('text-light');
+      six.classList.remove('text-light');
+      seven.classList.remove('text-light');
+      ate.classList.remove('text-light');
+     
+    }
 
 });
 
