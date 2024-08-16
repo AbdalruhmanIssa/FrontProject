@@ -92,33 +92,31 @@
 </div>
   </header>
     <main>
-
         <section class="reservation mt-4">
             <div class="container">
                 <div class="row">
                     <div class="d-flex gap-3 flex-wrap both-are-here">
                         <form class="row g-3 needs-validation col-md-6" novalidate>
             <h1>reservation details</h1>
-
                             <div class="col-md-5 ">
-                              <label for="validationCustom01" class="form-label">First name</label>
+                              <label for="validationCustom01" class="form-label name">First name</label>
                               <input type="text" class="form-control" id="validationCustom01" placeholder="Mike Hawk" required>
                               <div class="invalid-feedback">
                                 Please provide a valid name.
                               </div>
                             </div>
                             <div class="col-md-5 ">
-                                <label for="validationCustom05" class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" id="validationCustom05" placeholder="059-1234567" required>
+                                <label for="validationCustom05" class="form-label p-num" >Phone Number</label>
+                                <input type="tel"  class="form-control" id="validationCustom05" placeholder="059-1234567" required pattern="[0-9]{10}">
                                 <div class="invalid-feedback">
                                   Please provide a valid number.
                                 </div>
                               </div>
                             <div class="col-md-5">
-                              <label for="validationCustomUsername" class="form-label">Email</label>
+                              <label for="validationCustomUsername" class="form-label mail">Email</label>
                               <div class="input-group has-validation">
                                 
-                                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Example@mail.com" aria-describedby="inputGroupPrepend" required>
+                                <input type="email" class="form-control" id="validationCustomUsername" placeholder="Example@mail.com" aria-describedby="inputGroupPrepend" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid Email.
 
@@ -138,7 +136,7 @@
 
                             <div class="col-md-5">
                               <label for="validationCustom03" class="form-label">Time</label>
-                              <input type="datetime" class="form-control" id="validationCustom03" placeholder="Time*" required>
+                              <input type="time" class="form-control" id="validationCustom03" placeholder="Time*" required>
                               <div class="invalid-feedback">
                                 Please provide a valid time.
                               </div>
@@ -148,7 +146,7 @@
 
                             <div class="col-md-5">
                                 <label for="validationCustom02" class="form-label">Seats</label>
-                                <input type="number" class="form-control" id="validationCustom02" placeholder="Seats*" required>
+                                <input type="number" min="1" class="form-control" id="validationCustom02" placeholder="Seats*" required>
                                 <div class="invalid-feedback">
                                   Please provide a valid seats number.
                                 </div>
@@ -160,9 +158,12 @@
 
 
                             <div class="col-12">
-                              <button class="btn btn-warning text-light" type="submit">Submit form</button>
+                             
+                              <button class="btmsub btn btn-warning text-light" type="submit" >Submit form</button>
                             </div>
                           </form>
+                        
+    
             <div class="bullcrab col-md-6 d-flex flex-column gap-3">
               <h2>RESERVE YOUR TABLE ONLINE FROM HERE</h2>
               <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit totam tenetur vero incidunt neque veniam quas. Accusamus in ex temporibus.</p>

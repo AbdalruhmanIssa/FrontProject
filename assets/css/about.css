@@ -1,0 +1,49 @@
+@import url("./base.css");
+
+.H1{
+    font-size: 70px;
+}
+.story h1{
+    font-family: var(--mainfont);
+    font-size: 60px;
+letter-spacing: 5px;
+}
+.pics{
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 3%;
+    color: white;
+opacity: 0;
+
+}
+.pics svg{
+    height: 40px;
+}
+.pics h2{
+    font-family: var(--mainfont);
+font-size: 50px;
+}
+/*end of our-story*/
+/*start of statics*/
+.reveal-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+}
+.plus{
+    font-size: 50px;
+    color: yellow;
+}
+.op{
+    opacity: .5;
+}
+.chef h1{
+    font-family: var(--mainfont);
+    font-size: 60px;
+}
+/*end of statics*/
+/*start of chefs*/
+
