@@ -29,6 +29,7 @@ window.onscroll = function () {
   const pics = document.querySelector(".pics");
 
 };
+
 (() => {
   'use strict'
 
@@ -47,6 +48,7 @@ window.onscroll = function () {
     }, false)
   })
 })()
+
 // dark/light mode data-bs-theme
 const toggleButton = document.getElementById('theme-toggle-btn');
 const htmlElement = document.documentElement;
@@ -88,6 +90,7 @@ toggleButton.addEventListener('click', () => {
     }
 
 });
+
 window.addEventListener('scroll', function() {
 
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
