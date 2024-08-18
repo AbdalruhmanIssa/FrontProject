@@ -40,10 +40,30 @@ font-size: 50px;
 .op{
     opacity: .5;
 }
-.chef h1{
-    font-family: var(--mainfont);
-    font-size: 60px;
-}
+
 /*end of statics*/
 /*start of chefs*/
 
+.chef,.chef-info{
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.scrollspy-example{
+    overflow-y: auto;
+    max-height: 480px;
+    background-color: rgb(235, 235, 235);
+}
+.h4scroll{
+   font-family: var(--mainfont) ; 
+   font-size: 30px;
+}
+.scrollspy-example {
+    scrollbar-width:5px; /* Makes the scrollbar thinner */
+    scrollbar-color: yellow rgb(235, 235, 235); /* Scrollbar thumb color and track color */
+}
+@media (max-width:767px) {
+    .thechef{
+        width: 75%;
+    }    
+}

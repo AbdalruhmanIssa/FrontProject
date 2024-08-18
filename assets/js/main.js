@@ -104,3 +104,13 @@ window.addEventListener('scroll', function() {
   }
 });
 });
+
+
+document.querySelector('.scrollspy-example').addEventListener('wheel', function(event) {
+  event.preventDefault();
+  this.scrollBy({
+      top: event.deltaY,
+      left: 0,
+      behavior: 'smooth' 
+  });
+});
