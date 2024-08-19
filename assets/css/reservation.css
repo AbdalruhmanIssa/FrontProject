@@ -1,4 +1,3 @@
-@import url("./base.css");
 .reservation form{
     font-family:"Roboto";
     font-size: large;
@@ -6,12 +5,10 @@
 }
 .reservation h1 {
     font-family:var(--mainfont);
-   
 }
 .bullcrab h2{
     font-family: var(--mainfont);
     font-size: 50px;
- 
     border-bottom: 5px yellow solid;
 }
 .icon-p svg{
@@ -22,7 +19,6 @@ margin-bottom: 10px;
 h5{
     font-family: var(--mainfont);
     font-size: 30px;
-  
 }
 .contact-info svg{
     height: 60px;
@@ -33,9 +29,10 @@ opacity: .7;
 .address h1{
     font-size: 70px;
     letter-spacing: 2px;
-   
-
 }
+.modal{
+    transition: 5s; 
+    }
 @media (max-width:400px) {
     .contact-info svg{
         
@@ -55,8 +52,4 @@ opacity: .7;
     .contact-info svg{
         height: 0;
     }   
-}
-
-.modal{
-transition: 5s; 
 }

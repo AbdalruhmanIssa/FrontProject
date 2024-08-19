@@ -1,10 +1,7 @@
+//bootstrap form
 (() => {
     'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
       form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
@@ -21,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let today = new Date().toISOString().split('T')[0];
     document.getElementById('validationCustom04').setAttribute('min', today);
   });
-  // to dhow a modal after submition!
+  // to show a modal after submition!
   (function () {
     'use strict';
     var form = document.querySelector('.needs-validation');

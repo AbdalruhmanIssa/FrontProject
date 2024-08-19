@@ -1,69 +1,63 @@
 @import url("./base.css");
-
-.H1{
-    font-size: 70px;
+.H1 {
+  font-size: 70px;
 }
-.story h1{
-    font-family: var(--mainfont);
-    font-size: 60px;
-letter-spacing: 5px;
+.story h1 {
+  font-family: var(--mainfont);
+  font-size: 60px;
+  letter-spacing: 5px;
 }
-.pics{
-    background-color: rgb(0, 0, 0, 0.5);
-    border-radius: 3%;
-    color: white;
-opacity: 0;
-
+.pics {
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 3%;
+  color: white;
+  opacity: 0;
 }
-.pics svg{
-    height: 40px;
+.pics svg {
+  height: 40px;
 }
-.pics h2{
-    font-family: var(--mainfont);
-font-size: 50px;
+.pics h2 {
+  font-family: var(--mainfont);
+  font-size: 50px;
 }
 /*end of our-story*/
 /*start of statics*/
 .reveal-on-scroll {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-
 .reveal-on-scroll.visible {
-    opacity: 1;
+  opacity: 1;
 }
-.plus{
-    font-size: 50px;
-    color: yellow;
+.plus {
+  font-size: 50px;
+  color: yellow;
 }
-.op{
-    opacity: .5;
+.op {
+  opacity: 0.5;
 }
-
 /*end of statics*/
 /*start of chefs*/
-
-.chef,.chef-info{
-    background-color: rgb(235, 235, 235);
-    
-}
-
-.scrollspy-example{
-    overflow-y: auto;
-    max-height: 480px;
-    background-color: rgb(235, 235, 235);
-}
-.h4scroll{
-   font-family: var(--mainfont) ; 
-   font-size: 30px;
+.chef,
+.chef-info {
+  background-color: rgb(235, 235, 235);
+  color: black;
 }
 .scrollspy-example {
-    scrollbar-width:5px;
-    scrollbar-color: yellow rgb(235, 235, 235); 
+  overflow-y: auto;
+  max-height: 480px;
+  background-color: rgb(235, 235, 235);
 }
-@media (max-width:767px) {
-    .thechef{
-        width: 75%;
-    }    
+.h4scroll {
+  font-family: var(--mainfont);
+  font-size: 30px;
+}
+.scrollspy-example {
+  scrollbar-width: 5px;
+  scrollbar-color: yellow rgb(235, 235, 235);
+}
+@media (max-width: 767px) {
+  .thechef {
+    width: 75%;
+  }
 }
