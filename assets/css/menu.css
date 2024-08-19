@@ -30,8 +30,8 @@
   color: var(--bs-nav-pills-link-active-color);
   background-color: gold;
 }
-.nav-link {
-  color: goldenrod;
+.notnavlink {
+  color: rgb(218, 32, 32) !important;
 }
 .nav-link:hover {
   color: greenyellow;
