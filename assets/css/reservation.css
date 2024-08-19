@@ -57,3 +57,6 @@ opacity: .7;
     }   
 }
 
+.modal{
+transition: 5s; 
+}

@@ -30,24 +30,7 @@ window.onscroll = function () {
 
 };
 
-(() => {
-  'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
 
 // dark/light mode data-bs-theme
 const toggleButton = document.getElementById('theme-toggle-btn');
@@ -90,27 +73,17 @@ toggleButton.addEventListener('click', () => {
     }
 
 });
+//loading
+document.addEventListener("DOMContentLoaded", function() {
+  var loader = document.querySelector(`.overlay`);
 
-window.addEventListener('scroll', function() {
-
-  const revealElements = document.querySelectorAll('.reveal-on-scroll');
-    const statics=this.document.querySelector('.statics');
-  revealElements.forEach(function(element) {
-    const triggerHeight = statics.offsetTop - window.innerHeight / 2;
-  if (window.scrollY > triggerHeight) {
-    element.classList.add('visible');
-  } else {
-    element.classList.remove('visible');
-  }
-});
+  // Hide the loader once the page has fully loaded
+  window.onload = function() {
+      loader.classList.add("d-none");
+  };
 });
 
 
-document.querySelector('.scrollspy-example').addEventListener('wheel', function(event) {
-  event.preventDefault();
-  this.scrollBy({
-      top: event.deltaY,
-      left: 0,
-      behavior: 'smooth' 
-  });
-});
+
+
+
